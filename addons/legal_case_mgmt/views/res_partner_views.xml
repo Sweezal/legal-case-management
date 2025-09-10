@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Add filters to the Partner list view -->
+    <record id="view_res_partner_filter" model="ir.ui.view">
+        <field name="name">res.partner.filter.legal</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_filter"/>
+        <field name="arch" type="xml">
+            <filter name="sales" position="after">
+                <filter string="Lawyers" name="is_lawyer" domain="[('is_lawyer','=',True)]"/>
+                <filter string="Clients" name="is_client" domain="[('is_client','=',True)]"/>
+            </filter>
+        </field>
+    </record>
+
+    <!-- Add fields to the Partner form view -->
+    <record id="view_res_partner_form" model="ir.ui.view">
+        <field name="name">res.partner.form.legal</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="function" position="after">
+                <group string="Legal">
+                    <field name="is_lawyer"/>
+                    <field name="is_client"/>
+                    <field name="bar_number"/>
+                </group>
+            </field>
+        </field>
+    </record>
+</odoo>
