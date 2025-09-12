@@ -1,2 +1,17 @@
-"__pycache__/" 
-"*.pyc" 
+# Python 
+__pycache__/ 
+*.pyc 
+*.pyo 
+*.pyd 
+.Python 
+venv/ 
+env/ 
+.env 
+# IDE 
+.vscode/ 
+.idea/ 
+*.swp 
+*.swo 
+# System 
+Thumbs.db 
+.DS_Store 
