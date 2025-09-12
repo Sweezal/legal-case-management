@@ -1,0 +1,7 @@
+<header>
+    <!-- Buttons for actions -->
+    <button name="action_create_invoice" type="object" string="Create Invoice" class="btn-primary"/>
+    <button name="action_print_case_report" string="Print Summary" type="object" class="btn-secondary"/>
+    <!-- Status bar for stages -->
+    <field name="stage" widget="statusbar" statusbar_visible="intake,active,closed" clickable="True"/>
+</header>
