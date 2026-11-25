@@ -9,6 +9,7 @@ class LegalCase(models.Model):
     responsible_lawyer_id = fields.Many2one('res.partner', string='Responsible Lawyer', required=True, domain=[('is_lawyer', '=', True)])
     case_type = fields.Selection([('civil', 'Civil'), ('criminal', 'Criminal'), ('family', 'Family')], string='Case Type')
     stage = fields.Selection([
+        
         ('intake', 'Intake'),
         ('active', 'Active'), 
         ('closed', 'Closed'),
