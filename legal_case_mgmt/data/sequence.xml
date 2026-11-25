@@ -7,6 +7,7 @@
             <field name="prefix">CASE/%(year)s/</field>
             <field name="padding">4</field>
             <field name="company_id" eval="False"/>
+            
         </record>
     </data>
 </odoo>
