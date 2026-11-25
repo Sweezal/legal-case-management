@@ -15,7 +15,7 @@
         </field>
     </record>
 
-    <!-- Form View -->
+    
     <record id="view_legal_case_form" model="ir.ui.view">
         <field name="name">legal.case.form</field>
         <field name="model">legal.case</field>
