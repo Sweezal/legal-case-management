@@ -5,6 +5,7 @@
             <field name="name">Legal Case Reference</field>
             <field name="code">legal.case.sequence</field>
             <field name="prefix">CASE/%(year)s/</field>
+            
             <field name="padding">4</field>
             <field name="company_id" eval="False"/>
             
