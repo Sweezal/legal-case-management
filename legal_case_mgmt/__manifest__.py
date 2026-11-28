@@ -16,6 +16,8 @@
         'views/legal_hearing_views.xml',
         'views/menus.xml',
     ],
+
+    
     'demo': [
         'demo/demo.xml',
     ],
