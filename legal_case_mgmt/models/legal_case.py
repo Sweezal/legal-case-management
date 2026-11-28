@@ -4,6 +4,8 @@ class LegalCase(models.Model):
     _name = 'legal.case'
     _description = 'Legal Case'
 
+    
+
     name = fields.Char(string='Case Reference', required=True, copy=False, readonly=True, default='New')
     client_id = fields.Many2one('res.partner', string='Client', required=True, domain=[('is_client', '=', True)])
     responsible_lawyer_id = fields.Many2one('res.partner', string='Responsible Lawyer', required=True, domain=[('is_lawyer', '=', True)])
